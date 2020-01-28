@@ -10,7 +10,7 @@ function setupUI() {
 
     for (var index = 0; index < functions.length; index++) {
         html += `<div id="${index}" class="col-4 m-0 p-5">
-        <button class="btn btn-outline-dark my-5 mr-5">${functions[index].title}</button>
+        <button class="btn btn-outline-dark mb-5 mr-5">${functions[index].title}</button>
         <div class="text-box d-inline-block align-middle">
             <h1>${functions[index].title}</h1>
             <p>Example using ${functions[index].title}</p>
@@ -24,13 +24,6 @@ function setupUI() {
 // Document is finished loading! :)
 $(document).ready(function () {
     setupUI();
-
-    // This feature is currently not working. :(
-    $('#reset-all').click(function () {
-        console.log("#reset-all clicked.");
-        $('.row').html = "";
-        setupUI();
-    });
 
     // .click, .hide, .show, .toggle
     $('#0 button').click(function () {
@@ -57,6 +50,13 @@ $(document).ready(function () {
     // .slideDown, .slideUp, .slideToggle, .fadeIn, .fadeOut
     $('#4 button').click(function () {
         $('#4 p').slideDown();
-        console.log("Paragraph is now being toggled to show / hide.");
+    });
+
+    $('#5 button').click(function () {
+        $('#5 p').slideIn();
+    });
+
+    $('#6 button').click(function () {
+        $('#6 p').slideToggle();
     });
 });
