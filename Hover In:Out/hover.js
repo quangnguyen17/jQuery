@@ -1,14 +1,11 @@
 
-var imageIDs = []
-
 function loadImages() {
     for (var i = 0; i < 12; i++) {
-        code = `<div class="col-3 p-1">
-            <img id="${i}" class="w-100 h-100 bg-success border border-warning" src="prm-images/${i}.${fileExt(i)}" alt="">
+        code = `<div class="col-3 p-3">
+            <img id="${i}" class="w-100 h-100 bg-success" src="prm-images/${i}.${fileExt(i)}" alt="">
         </div>`;
 
         $(".row").append(code);
-        imageIDs.push(i);
     }
 }
 
