@@ -1,4 +1,6 @@
 
+var imageIDs = []
+
 function loadImages() {
     for (var i = 0; i < 12; i++) {
         code = `<div class="col-3 p-1">
@@ -6,6 +8,7 @@ function loadImages() {
         </div>`;
 
         $(".row").append(code);
+        imageIDs.push(i);
     }
 }
 
@@ -16,8 +19,8 @@ function handleHoveringEffects() {
         $(this).attr('src', `prm-images/${ranNum}.${fileExt(ranNum)}`);
     }, function () {
         // Out
-        var ranNum = Math.floor(Math.random() * 12) + 0;
-        $(this).attr('src', `prm-images/${ranNum}.${fileExt(ranNum)}`);
+        var imageID = $(this).attr('id');
+        $(this).attr('src', `prm-images/${imageID}.${fileExt(imageID)}`);
     });
 }
 
