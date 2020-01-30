@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <title>Dojo Arena</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="row h-full bg-black m-5 border-custom justify-content-center align-items-center bg-custom">
+            <div class="col-3 mt-auto">
+                <img id="left-img" class="ninja-size" src="images/donny.png" alt="">
+            </div>
+
+            <div class="col-4 h-30 p-4 text-center light-gray border-custom-2">
+                <button id="back" class="btn btn-danger custom-position">Back</button>
+
+                <h1 class="text-warning text-shadow-custom my-4">Select Arena</h1>
+
+                <div class="buttons">
+                    <button class="btn btn-light fixed-size my-1">beach</button>
+                    <button class="btn btn-light fixed-size">planet</button>
+                    <button class="btn btn-light fixed-size">dojo</button>
+                </div>
+                <div class="buttons">
+                    <button class="btn btn-light fixed-size">forest</button>
+                    <button class="btn btn-light fixed-size">matrix</button>
+                    <button class="btn btn-light fixed-size">snow</button>
+                </div>
+
+                <form class="select-players">
+                    <!-- <select id="left">
+                        <option value="select-ninja">Select Ninja</option>
+                        <option value="donny">Donny</option>
+                        <option value="leo">Leo</option>
+                        <option value="mikey">Mikey</option>
+                        <option value="raphael">Raphael</option>
+                    </select>
+
+                    <select id="right">
+                        <option value="select-ninja">Select Ninja</option>
+                        <option value="donny">Donny</option>
+                        <option value="leo">Leo</option>
+                        <option value="mikey">Mikey</option>
+                        <option value="raphael">Raphael</option>
+                    </select> -->
+                </form>
+            </div>
+
+            <div class="col-3 mt-auto">
+                <img id="right-img" class="ninja-size" src="images/donny.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
